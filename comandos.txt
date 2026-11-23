@@ -10,7 +10,7 @@ Depois de clonado, clique no arquivo e abra o terminal integrado
 Escreva o seguinte código para compilar
 gcc -Wall -Wextra -o streaming streaming.c
 
-Terceiro passo>
+Terceiro passo:
 Depois de compilado, escreva no terminal o seguinte comando 
 
 Linux/macOS:    ./streaming
