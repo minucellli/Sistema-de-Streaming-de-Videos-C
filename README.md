@@ -1,12 +1,11 @@
 # Sistema de Streaming de Vídeos (C – arquivos binários)
 Sistema de streaming de vídeos em C que manipula dois arquivos binários (vídeos e usuários) com relacionamento entre eles: cadastro, leitura, atualização, remoção e relatórios.
 
-**Entrega [Em dupla] :**
+**Entrega [Individual] :**
 
 | Nome | RA |
 |------|----|
 | Letícia de Carvalho Minucelli | 00000865761 |
-| Giovana | 000000 |
 
 ## Descrição
 Programa em C que manipula dois arquivos binários:
