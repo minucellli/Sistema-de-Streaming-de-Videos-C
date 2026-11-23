@@ -1,0 +1,18 @@
+Comandos para executar o programa:
+
+Primeiro passo:
+Clone o repositório do github no seu vs code
+https://github.com/minucellli/Sistema-de-Streaming-de-Videos-C.git
+Ponha esse link quando aperta na opção de clonar repositório, no menu do vs code
+
+Segundo passo:
+Depois de clonado, clique no arquivo e abra o terminal integrado
+Escreva o seguinte código para compilar
+gcc -Wall -Wextra -o streaming streaming.c
+
+Terceiro passo>
+Depois de compilado, escreva no terminal o seguinte comando 
+
+Linux/macOS:    ./streaming
+Windows (PowerShell):   .\streaming.exe
+Windows (CMD):  streaming.exe
