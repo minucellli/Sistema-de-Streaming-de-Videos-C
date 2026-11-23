@@ -23,5 +23,5 @@ O relacionamento é feito pelo vetor `favoritos[]` do usuário, que guarda IDs d
 - Ao remover um vídeo, ele também sai dos favoritos de todos os usuários
 - Relatórios: usuários com os **títulos** dos favoritos e vídeos com os **nomes** de quem os favoritou
 
-##Link pro vídeo do youtube
-https://youtu.be/ZLCl7_miJ90
+## Vídeo de demonstração
+[Assista no YouTube](https://youtu.be/ZLCl7_miJ90)
