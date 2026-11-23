@@ -387,3 +387,88 @@ static void relatorio_videos_fas(void) {
     }
     fclose(fv);
 }
+
+/*menus*/
+
+static void menu_videos(void) {
+    int op;
+    do {
+        printf("\n--- MENU VIDEOS ---\n"
+               "1 - Cadastrar video\n"
+               "2 - Atualizar video\n"
+               "3 - Ler um video (por ID)\n"
+               "4 - Listar todos os videos\n"
+               "5 - Remover video\n"
+               "0 - Voltar\n");
+        op = ler_int("Opcao: ");
+        switch (op) {
+            case 1: cadastrar_video(); break;
+            case 2: atualizar_video(); break;
+            case 3: ler_um_video(); break;
+            case 4: listar_videos(); break;
+            case 5: remover_video(); break;
+            case 0: break;
+            default: printf("Opcao invalida.\n");
+        }
+    } while (op != 0);
+}
+
+static void menu_usuarios(void) {
+    int op;
+    do {
+        printf("\n--- MENU USUARIOS ---\n"
+               "1 - Cadastrar usuario\n"
+               "2 - Atualizar usuario\n"
+               "3 - Ler um usuario (por ID)\n"
+               "4 - Listar todos os usuarios\n"
+               "5 - Remover usuario\n"
+               "0 - Voltar\n");
+        op = ler_int("Opcao: ");
+        switch (op) {
+            case 1: cadastrar_usuario(); break;
+            case 2: atualizar_usuario(); break;
+            case 3: ler_um_usuario(); break;
+            case 4: listar_usuarios(); break;
+            case 5: remover_usuario(); break;
+            case 0: break;
+            default: printf("Opcao invalida.\n");
+        }
+    } while (op != 0);
+}
+
+static void menu_relatorios(void) {
+    int op;
+    do {
+        printf("\n--- MENU RELATORIOS ---\n"
+               "1 - Usuarios e seus videos favoritos (nomes)\n"
+               "2 - Videos e usuarios que os favoritaram\n"
+               "0 - Voltar\n");
+        op = ler_int("Opcao: ");
+        switch (op) {
+            case 1: relatorio_usuarios_favoritos(); break;
+            case 2: relatorio_videos_fas(); break;
+            case 0: break;
+            default: printf("Opcao invalida.\n");
+        }
+    } while (op != 0);
+}
+
+int main(void) {
+    int op;
+    do {
+        printf("\n========== STREAMING DE VIDEOS ==========\n"
+               "1 - Videos (cadastro, atualizacao, consulta, remocao)\n"
+               "2 - Usuarios (cadastro, atualizacao, consulta, remocao)\n"
+               "3 - Relatorios\n"
+               "0 - Sair\n");
+        op = ler_int("Opcao: ");
+        switch (op) {
+            case 1: menu_videos(); break;
+            case 2: menu_usuarios(); break;
+            case 3: menu_relatorios(); break;
+            case 0: printf("Encerrando...\n"); break;
+            default: printf("Opcao invalida.\n");
+        }
+    } while (op != 0);
+    return 0;
+}
